@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/linyacool/WebServer.svg?branch=master)](https://travis-ci.org/linyacool/WebServer)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT)
 
-  
+
 ## Introduction  
 
 本项目为C++11编写的Web服务器，解析了get、head请求，可处理静态资源，支持HTTP长连接，支持管线化请求，并实现了异步日志，记录服务器运行状态。  
@@ -37,15 +37,15 @@
 * 为减少内存泄漏的可能，使用智能指针等RAII机制
 * 使用状态机解析了HTTP请求,支持管线化
 * 支持优雅关闭连接
- 
+
 ## Model
 
 并发模型为Reactor+非阻塞IO+线程池，新连接Round Robin分配，详细介绍请参考[并发模型](https://github.com/linyacool/WebServer/blob/master/并发模型.md)
-![并发模型](https://github.com/linyacool/WebServer/blob/master/datum/model.png)
+<img src="https://mdpict-1302182347.cos.ap-beijing.myqcloud.com/model.png" alt="并发模型" style="zoom:30%;" />
 
 ## 代码统计
 
-![cloc](https://github.com/linyacool/WebServer/blob/master/datum/cloc.png)
+<img src="https://mdpict-1302182347.cos.ap-beijing.myqcloud.com/cloc.png" alt="cloc" style="zoom:40%;" />
 
 
 ## Others
